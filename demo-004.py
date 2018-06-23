@@ -74,7 +74,7 @@ def run(X_list,Y_list):
 
         #print(W)
 
-        E = shrink(Y-np.dot(W,X) - E + (mu**-1) * L, (mu)*lamb)
+        E = shrink(Y-np.dot(W,X)   + (mu**-1) * L, (mu)*lamb)
 
         #mu = max(mu * 0.98,mu*0.1)
         #print(mu)
